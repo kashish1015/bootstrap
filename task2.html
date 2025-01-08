@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form, Badges & Carousel</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST" class="responsive-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Badges Section -->
+    <section class="badges">
+        <h3>Badges</h3>
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-secondary">Secondary</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-warning">Warning</span>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="https://via.placeholder.com/800x300?text=Image+1" alt="Slide 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://via.placeholder.com/800x300?text=Image+2" alt="Slide 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://via.placeholder.com/800x300?text=Image+3" alt="Slide 3">
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
